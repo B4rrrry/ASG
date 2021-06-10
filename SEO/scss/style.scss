@@ -1,0 +1,181 @@
+/*SPECIFICATIONS*/
+$openSans: "Open Sans", "sans-serif";
+$arsenal: "Arsenal", "sans-serif";
+body {
+    font-family: $openSans;
+    scroll-behavior: smooth;
+}
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.subheader {
+    font-size: 18px;
+    line-height: 25px;
+}
+p {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+.hidden {
+    display: none;
+}
+/*END*/
+/*HEADER*/
+@import "./header";
+/*END*/
+/*OFFER*/
+.offer {
+    margin-top: 38px;
+    &__content {
+        display: flex;
+    }
+    &__info {
+        margin-left: 11px;
+        // Левый блок
+        &-title {
+            font-size: 56px;
+            line-height: 67px;
+            font-family: $arsenal;
+            margin-bottom: 20px;
+            width: 438px;
+            span {
+                color: #eb6a48;
+            }
+        }
+        &-subtitle {
+            width: 412px;
+            font-size: 24px;
+            line-height: 26px;
+            font-family: $arsenal;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 130px;
+                height: 2px;
+                border: 2px solid #eb6a48;
+            }
+            span {
+                color: #eb6a48;
+            }
+        }
+        &-text {
+            width: 425px;
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 57px;
+            span {
+                color: #eb6a48;
+            }
+        }
+        &-link {
+            background: #eb6a48;
+            border-radius: 20px;
+            padding: 15px 22px;
+            color: #fff;
+            margin-right: 26px;
+        }
+        &-task {
+            font-size: 16px;
+            line-height: 22px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid black;
+        }
+        // Левый блок конец
+        // Изображение по ценру
+        &-img {
+            position: relative;
+            z-index: -1;
+            left: -51px;
+            top: -6px;
+        }
+        // Конец
+        // Правый блок с формой
+        &-right_block {
+            margin-left: -167px;
+            margin-top: 12px;
+        }
+        &-help {
+            font-size: 18px;
+            line-height: 23px;
+            font-family: $arsenal;
+            width: 272px;
+            font-weight: bold;
+            margin-bottom: 24px;
+            span {
+                &:first-child {
+                    width: 40px;
+                    height: 2px;
+                    display: inline-block;
+                    border-bottom: 2px solid #131313;
+                    position: relative;
+                    top: -5px;
+                }
+                &:last-child {
+                    padding-left: 72px;
+                }
+            }
+        }
+        &-form {
+            box-shadow: 0px 10px 20px rgba(16, 16, 16, 0.25);
+            background-color: #fff;
+            border-radius: 20px;
+            width: 272px;
+            height: 454px;
+            padding: 20px;
+        }
+        // Конец
+    }
+    .form__list {
+        &-item {
+            margin-bottom: 13px;
+            &:nth-child(4) {
+                margin-bottom: 14px;
+            }
+            label {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                font-family: $arsenal;
+                margin-bottom: 11px;
+            }
+            input {
+                outline: none;
+                width: 232px;
+                height: 45px;
+                background: #f9f9f9;
+                border: 1px solid #c4c4c4;
+                box-sizing: border-box;
+                border-radius: 15px;
+                padding-left: 13px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 19px;
+                color: #606060;
+                font-family: $openSans;
+                &[type="submit"] {
+                    background: #eb6a48;
+                    border-radius: 15px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 21px;
+                    font-family: $openSans;
+                    color:#fff;
+                    border:none;
+                }
+            }
+        }
+    }
+}
+
+/*END*/
