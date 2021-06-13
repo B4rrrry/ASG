@@ -60,6 +60,9 @@
         &-link {
             text-decoration: none;
             color: #000;
+            &:hover {
+                color:black;
+            }
             img {
                 margin-right: 5px;
                 display: inline-block;
