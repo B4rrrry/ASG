@@ -30,6 +30,7 @@ a:hover {
 .rel {
     position: relative;
 }
+@import './slider_all';
 /*END*/
 /*HEADER*/
 @import "./header";
@@ -171,7 +172,6 @@ a:hover {
                 &[type="submit"] {
                     background: #eb6a48;
                     border-radius: 15px;
-                    font-weight: bold;
                     font-size: 16px;
                     line-height: 21px;
                     font-family: $openSans;
@@ -373,6 +373,14 @@ a:hover {
 /* TASKS */
 .tasks {
     padding-bottom: 60px;
+
+    &__bg {
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+        width: 215px;
+        height: 215px;
+    }
     &__title {
         color: #131313;
         width: 749px;
@@ -481,9 +489,31 @@ a:hover {
             padding-bottom: 5px;
             border-bottom: 2px solid black;
             height: 25px;
-            margin-top: 10px;
+            margin-top: 15px;
             margin-right: 20px;
+            box-sizing: content-box;
         }
     }
+}
+/* END */
+/* REVIEWS */
+.reviews {
+    background-color: #f9f9f9;
+    &__title {
+        width: 620px;
+        margin: 62px auto 5px;
+        span {
+            color: #EB6A48; 
+        }
+    }
+    &__subheader {
+        width: 721px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0 auto 60px;
+    }
+    @import './slider_reviews';
 }
 /* END */
