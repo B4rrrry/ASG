@@ -447,6 +447,8 @@ a:hover {
             width: 715px;
             margin: 0 auto 23px;
             font-family: $arsenal;
+            font-size: 30px;
+            line-height: 38px;
             span {
                 color: #eb6a48;
             }
@@ -625,6 +627,9 @@ a:hover {
         display: flex;
         margin-bottom: 15px;
         position: relative;
+        &-name {
+            margin-top: 50px;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -872,7 +877,7 @@ a:hover {
             margin-right: 40px;
             border-right: 2px solid #131313;
             &:last-child {
-                border:none;
+                border: none;
             }
         }
         &-number {
@@ -891,3 +896,204 @@ a:hover {
     }
 }
 // achievements end
+// niches
+.niches {
+    padding-bottom: 25px;
+    background: #f9f9f9;
+    &__title {
+        width: 690px;
+        margin: 71px auto 5px;
+    }
+    &__subheader {
+        width: 673px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    // bg images
+    &__bg {
+        position: absolute;
+        &-top {
+            width: 210px;
+            height: 157px;
+            top: 0;
+            left: 0;
+        }
+        &-bot {
+            width: 262px;
+            height: 262px;
+            right: 0;
+            bottom: -145px;
+        }
+    }
+    // bg images end
+    // niches list
+    &__list {
+        width: 607px;
+        height: 284px;
+        margin-top: 51px;
+        margin-right: 115px;
+        display: flex;
+        flex-wrap: wrap;
+        &-item {
+            margin-right: 31px;
+            margin-bottom: 50px;
+            &:nth-child(5),
+            &:nth-child(10) {
+                margin-right: 0;
+            }
+            &:nth-child(6),
+            &:nth-child(7),
+            &:nth-child(8),
+            &:nth-child(9),
+            &:nth-child(10) {
+                margin-bottom: 0;
+            }
+        }
+        &-img {
+            width: 50px;
+            height: 50px;
+            &_bg {
+                width: 85px;
+                height: 85px;
+                background: #eb6a48;
+                border-radius: 50%;
+                padding: 18px 17px 17px 18px;
+                margin: 0 auto 10px;
+            }
+        }
+        &-name {
+            font-family: $openSans;
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+    // niches list end
+    &__img-active {
+        width: 385px;
+        height: 375px;
+        margin-bottom: 60px;
+    }
+}
+// niches end
+// stages
+.stages {
+    padding-bottom: 60px;
+    &__title {
+        width: 354px;
+        margin: 60px auto 5px;
+    }
+    &__subheader {
+        width: 392px;
+        margin: 0 auto 50px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        &-item {
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-scale {
+            width: 170px;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            &:nth-child(1) {
+                background-image: url("../img/stages/1.png");
+            }
+            &:nth-child(2) {
+                background-image: url("../img/stages/2.png");
+            }
+            &:nth-child(3) {
+                background-image: url("../img/stages/3.png");
+            }
+            &:nth-child(4) {
+                background-image: url("../img/stages/4.png");
+            }
+        }
+        &-percent {
+            font-size: 36px;
+            line-height: 45px;
+        }
+        &-name {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        &-desc {
+            width: 238px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}
+// stages end
+// indexing
+.indexing {
+    &__title {
+        width: 659px;
+        margin: 60px auto 5px;
+    }
+    &__subheader {
+        width: 699px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 auto 60px;
+    }
+    &__wrapper {
+        width: 825px;
+        height: 465px;
+        display: flex;
+        flex-direction: column;
+        border: 10px solid #131313;
+        box-sizing: border-box;
+        box-shadow: 0px 20px 35px rgba(19, 19, 19, 0.2);
+        border-radius: 30px;
+        margin: 0 auto;
+        padding:30px 24px 30px 50px;
+    }
+    &__name-wrap {
+        display: flex;
+    }
+   
+    &__table {
+        &-title {
+            font-family: $arsenal;
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 4px;
+        }
+        &-desc {
+            width: 182px;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 4px;
+        }
+        &-name {
+            &-second {
+                margin-left: auto;
+            }
+        }
+    }
+}
+// indexing end
