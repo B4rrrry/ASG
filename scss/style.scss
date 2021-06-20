@@ -731,7 +731,7 @@ a:hover {
   &__link {
     font-size: 18px;
     line-height: 23px;
-    padding-top: 6px;
+    padding-top: 15px;
     margin-left: auto;
     color: #131313;
     &:hover {
@@ -1040,6 +1040,7 @@ a:hover {
   }
   &__list {
     display: flex;
+    justify-content: center;
     &-item {
       height: 150px;
       padding: 10px 40px 10px 0;
@@ -1047,6 +1048,8 @@ a:hover {
       border-right: 2px solid #131313;
       &:last-child {
         border: none;
+        padding: 0;
+        margin-right: 0;
       }
     }
     &-number {
@@ -1054,6 +1057,7 @@ a:hover {
       font-weight: normal;
       font-size: 64px;
       line-height: 80px;
+      text-align: center;
     }
     &-desc {
       width: 189px;
@@ -1684,8 +1688,11 @@ a:hover {
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
+        transition: padding 0.5s;
         &:hover {
           color: #ffffff;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #fff;
         }
       }
     }

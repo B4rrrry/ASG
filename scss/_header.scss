@@ -225,6 +225,11 @@
           margin-bottom: 0;
         }
       }
+      &-link {
+        &:hover {
+          font-weight: 600;
+        }
+      }
     }
   }
   // header sub nav end

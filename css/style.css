@@ -380,6 +380,10 @@ a:hover {
   margin-bottom: 0;
 }
 
+.header-sub__nav-link:hover {
+  font-weight: 600;
+}
+
 /*END*/
 /*OFFER*/
 .offer {
@@ -1421,7 +1425,7 @@ a:hover {
 .portfolio__link {
   font-size: 18px;
   line-height: 23px;
-  padding-top: 6px;
+  padding-top: 15px;
   margin-left: auto;
   color: #131313;
 }
@@ -1793,6 +1797,10 @@ a:hover {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .achievements__list-item {
@@ -1804,6 +1812,8 @@ a:hover {
 
 .achievements__list-item:last-child {
   border: none;
+  padding: 0;
+  margin-right: 0;
 }
 
 .achievements__list-number {
@@ -1811,6 +1821,7 @@ a:hover {
   font-weight: normal;
   font-size: 64px;
   line-height: 80px;
+  text-align: center;
 }
 
 .achievements__list-desc {
@@ -2619,10 +2630,15 @@ a:hover {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
+  -webkit-transition: padding 0.5s;
+  -o-transition: padding 0.5s;
+  transition: padding 0.5s;
 }
 
 .footer__nav__list-link:hover {
   color: #ffffff;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
 }
 
 .copyright {
