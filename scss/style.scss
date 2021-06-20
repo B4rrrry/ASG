@@ -33,8 +33,18 @@ a:hover {
 .rel {
     position: relative;
 }
-@import "./slider_all";
+.static {
+    position: static
+}
+.btn-hover {
+    transition: all 0.2s ease-in;
+    &:hover {
+        filter: drop-shadow(0px 10px 20px rgba(241, 104, 68, 0.3));
+    }
+
+}
 /*END*/
+@import "./slider_all";
 /*HEADER*/
 @import "./header";
 /*END*/
@@ -65,6 +75,7 @@ a:hover {
             padding-bottom: 15px;
             margin-bottom: 20px;
             position: relative;
+            z-index: -1;    
             &::before {
                 content: "";
                 position: absolute;
@@ -129,6 +140,7 @@ a:hover {
                     border-bottom: 2px solid #131313;
                     position: relative;
                     top: -5px;
+                    z-index: -1;
                 }
                 &:last-child {
                     padding-left: 72px;
@@ -695,28 +707,63 @@ a:hover {
         }
     }
     // btn close end
-    // portfolio work 
+    // portfolio work
     &__work {
         border-top: 2px solid #131313;
         border-bottom: 2px solid #131313;
         padding: 15px 0 35px 0;
         max-height: 140px;
         overflow: hidden;
-        transition:all 1s ease-in-out;
+        transition: all 0.7s ease-in;
+        &:last-child {
+            .portfolio_cm__bg {
+                display: none;
+            }
+            .portfolio_cm__item {
+                & {
+                    opacity: 0;
+                }
+            }
+        }
         .portfolio {
             &__img {
                 opacity: 0;
             }
+            &__wrapper {
+                margin-left: auto;
+                margin-right: 150px;
+            }
         }
         &-active {
-            max-height:355px;
+            max-height: 354px;
+            &:last-child {
+                max-height: 523px;
+            }
+            &:last-child {
+                .portfolio_cm__bg {
+                    display: block;
+                }
+                .portfolio_cm__item {
+                    & {
+                        opacity: 1;
+                    }
+                    &:nth-child(3) {
+                        .portfolio_cm__text {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
             .portfolio {
                 &__img {
                     opacity: 1;
                 }
-
+                &__wrapper {
+                    margin-left: inherit;
+                    margin-right: inherit;
+                }
                 &__desc {
-                    opacity: 1;
+                    display: block;
                     &-excerpt {
                         display: none;
                     }
@@ -733,12 +780,12 @@ a:hover {
         font-weight: normal;
     }
     &__img {
-        transition:all 0.5s ease-in-out;
         margin-top: 14px;
         margin-right: 50px;
         width: 475px;
         height: 290px;
         filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.25));
+        transition: all 0.5s ease-in;
     }
     &__info {
         display: flex;
@@ -757,8 +804,7 @@ a:hover {
         font-size: 16px;
         line-height: 22px;
         margin-bottom: 15px;
-        opacity: 0;
-        transition:all 0.5s ease-in-out;
+        display: none;
         &-excerpt {
             width: 414px;
             font-weight: 300;
@@ -774,7 +820,6 @@ a:hover {
     &__region,
     &__advancement,
     &__increase {
-        transition:all 0.5s ease-in-out;
         font-weight: 300;
         font-size: 16px;
         line-height: 22px;
@@ -792,7 +837,9 @@ a:hover {
     }
     &_cm {
         position: relative;
+
         &__bg {
+            transition: all 0.5s ease-in;
             width: 379px;
             height: 312px;
             position: absolute;
@@ -802,8 +849,22 @@ a:hover {
         &__list {
             display: flex;
             flex-wrap: wrap;
+            &-none {
+                .portfolio_cm__item {
+                    &:not(:nth-child(3)) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        opacity: 1;
+                        .portfolio_cm__text {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
         &__item {
+            transition: all 0.5s ease-in;
             margin-right: 45px;
             margin-bottom: 45px;
             &:nth-child(3),
@@ -1391,9 +1452,13 @@ a:hover {
     }
 }
 // questions end
+// footer
 .footer {
-    background: #171717;
-    padding-top: 30px;
+    &__main {
+        background: #171717;
+        padding-bottom: 60px;
+        padding-top: 30px;
+    }
     &__info {
         display: flex;
         padding-bottom: 25px;
@@ -1471,16 +1536,21 @@ a:hover {
     // footer map end
     // footer nav
     &__nav {
-        &-left {
+        display: flex;
+        &-cont {
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: column;
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+            }
         }
         &-wrap {
             display: flex;
             flex-direction: column;
-            margin-right: 40px;
-            &:nth-child(4n + 4) {
-                margin-right: 0;
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 0;
             }
         }
         &-title {
@@ -1502,6 +1572,8 @@ a:hover {
         &__list {
             &-item {
                 margin-bottom: 15px;
+                max-width: 230px;
+                word-break: break-word;
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -1520,3 +1592,18 @@ a:hover {
     }
     // footer nav end
 }
+// footer end
+// copyright
+.copyright {
+    background: #0A0A0A;
+    padding: 10px 0;
+    &__text {
+        width: 517px;
+        margin:0 auto;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+// copyright end
