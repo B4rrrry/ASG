@@ -9,11 +9,11 @@ function headerNavInit() {
     wraps.forEach( (wrap,i) => {
         wrap.addEventListener('mouseover',function (e) {
             wrapSub.addEventListener('mouseleave',function (e) {
-                test1(link,wrap);
+                showSubMenu1(link,wrap);
             })
             wrap.addEventListener('mousemove',function (e) {
                 wrapTarget = e.target;
-                test(e,i,wrapTarget)
+                showSubMenu(e,i,wrapTarget)
                
             })
         })
@@ -26,22 +26,22 @@ function headerNavInit() {
             itemTarget = e.target;
             item.addEventListener('mouseout',function(e) {
                 if(e.relatedTarget != wrapSub) {
-                    test1();
+                    showSubMenu1();
                 }
             })
-            test1()
-            test(e,i);
+            showSubMenu1()
+            showSubMenu(e,i);
         });
 
     } )
-    function test1 (i,wrap) {
+    function showSubMenu1 (i,wrap) {
         for (let i = 0; i < wraps.length; i++) {
             wraps[i].style.display = 'none';
             
         }
         wrapSub.style.display = 'none';
     }
-    function test(e,i,wp) {
+    function showSubMenu(e,i,wp) {
        
         if (e.target != wp) {
             wrapSub.style.display = 'block';
