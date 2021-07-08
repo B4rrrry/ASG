@@ -4,6 +4,35 @@ hoversInit();
 sendHelp();
 changeServicesList();
 updateQuestions();
+headerBurgerInit();
+footerMobileInit();
+function footerMobileInit () {
+    const btnsMenu = document.querySelectorAll('.footer__nav-close'),
+          navs = document.querySelectorAll('.footer__nav-wrap');
+    btnsMenu.forEach((btn,i) => {
+        btn.addEventListener('click', function () {
+            btn.classList.toggle('footer__nav-close-active');
+            navs[i].classList.toggle('footer__nav-wrap-active')
+        })
+    })
+
+}
+function headerBurgerInit () {
+    if (window.matchMedia("(max-width:991px)").matches) {
+        burgerInit()
+    }
+    function burgerInit () {
+        const burgerBtn = document.querySelector('.header__burger-btn'),
+              burgerWrapper = document.querySelector('.header__burger-wrapper'),
+              header = document.querySelector('.header'),
+              burgerBg = document.querySelector('.header__burger_bg');
+        burgerBtn.addEventListener('click', function () {
+            burgerWrapper.classList.toggle('header__burger-wrapper-active');
+            header.classList.toggle('header__burger-active');
+            burgerBg.classList.toggle('header__burger_bg-active');
+        })
+    } 
+}
 function updateQuestions () {
     let qstnBtnsWrap = document.querySelectorAll('.questions__list-btn_wrap'),
         qstnTabs = document.querySelectorAll('.questions__list-item '),

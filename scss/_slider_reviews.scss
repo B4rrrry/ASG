@@ -2,140 +2,195 @@
 
 /*Конкретный слайдер*/
 .reviews__slider {
-    position: relative;
-    margin-bottom: 135px;
+  position: relative;
+  margin-bottom: 135px;
 }
 
 .reviews__slider .slick-arrow {
-    width: 50px;
-    height: 50px;
-    filter: drop-shadow(0px 5px 10px rgba(235, 106, 72, 0.3));
-    background-color: #eb6a48;
-    background-repeat: no-repeat;
-    background-size: 30px;
-    border-radius: 50%;
-    z-index: 10;
-    font-size: 0;
-    border: 0;
-    outline: none;
-    position: absolute;
-    bottom: -90px;
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0px 5px 10px rgba(235, 106, 72, 0.3));
+  background-color: #eb6a48;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  border-radius: 50%;
+  z-index: 10;
+  font-size: 0;
+  border: 0;
+  outline: none;
+  position: absolute;
+  bottom: -90px;
 }
 /*Левая стрелочка*/
 .reviews__slider .slick-arrow.slick-prev {
-    background-image: url('../img/slider/prev.svg');
-    background-position: 8px 50%;
-    left: calc(50% - 65px);
-    right: calc(50% + 15px);
+  background-image: url("../img/slider/prev.svg");
+  background-position: 8px 50%;
+  left: calc(50% - 65px);
+  right: calc(50% + 15px);
 }
 .reviews__slider .slick-arrow.slick-next {
-    background-image: url('../img/slider/next.svg');
-    background-position: 12px 50%;
-    left: 50%;
-    right: calc(50% - 15px);
+  background-image: url("../img/slider/next.svg");
+  background-position: 12px 50%;
+  left: 50%;
+  right: calc(50% - 15px);
 }
 /*Если слайдер достигнет конца,то кнопка пропадает
 */
 .reviews__slider .slick-arrow .slick-disabled {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 .reviews__slider .slick-dots {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .reviews__slider .slick-dots li {
-    list-style: none;
-    margin: 0 10px;
+  list-style: none;
+  margin: 0 10px;
 }
 /*Точки*/
 .reviews__slider .slick-dots button {
-    font-size: 0;
-    width: 20px;
-    height: 20px;
-    background-color: #000;
-    opacity: 0.5;
-    border: 0;
-    border-radius: 50%;
-    outline: none;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  opacity: 0.5;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
 }
 .reviews__slider .slick-dots li.slick-active button {
-    background-color: transparent;
-    background-color: #000;
-    opacity: 1;
+  background-color: transparent;
+  background-color: #000;
+  opacity: 1;
 }
 .reviews__slider .slider__item {
-    display: flex;
-    width: 791px;
-    height: 422px;
-    padding: 68px 43px;
-    background: #ffffff;
-    box-shadow: 0px 10px 20px rgba(16, 16, 16, 0.2);
-    border-radius: 20px;
-    margin-right: 30px;
-    align-self: center;
-    filter: blur(5px);
-    margin-bottom: 40px;
-    
+  display: flex;
+  width: 791px;
+  height: 422px;
+  padding: 68px 43px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(16, 16, 16, 0.2);
+  border-radius: 20px;
+  margin-right: 30px;
+  align-self: center;
+  filter: blur(5px);
+  margin-bottom: 40px;
 }
 .reviews__slider .slick-current {
-    filter: blur(0px);
+  filter: blur(0px);
 }
 .reviews__slider {
-    & .reviews {
-        &__client {
-            
-           
-            &-logo {
-                margin-right: 49px;
-                width: 220px;
-                height: 220px;
-                border-radius: 50%;
-                padding: 29px 27px;
-                border: 3px solid #131313;
-                position: relative;
-            }
-            &-quote {
-                position: absolute;
-                top: 0;
-                right: 0;
-            }
-            &-img {
-                width: 162px;
-                height: 162px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-                border-radius: 50%;
-            }
-        }
-        &__info {
-            &-client {
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 30px;
-                margin-bottom: 15px;
-                font-family: $arsenal;
-            }
-            &-text {
-                width: 436px;
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 22px;
-                color: #2c2c2c;
-                margin-bottom: 15px;
-            }
-            &-name {
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 25px;
-                font-family: $arsenal;
-                margin-bottom: 5px;
-            }
-            &-pos {
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 20px;
-                color: #2c2c2c;
-            }
-        }
+  & .reviews {
+    &__client {
+      &-logo {
+        margin-right: 49px;
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        padding: 29px 27px;
+        border: 3px solid #131313;
+        position: relative;
+      }
+      &-quote {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &-img {
+        width: 162px;
+        height: 162px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+      }
     }
-} 
+    &__info {
+      &-client {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        font-family: $arsenal;
+      }
+      &-text {
+        width: 436px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2c2c2c;
+        margin-bottom: 15px;
+      }
+      &-name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        font-family: $arsenal;
+        margin-bottom: 5px;
+      }
+      &-pos {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        color: #2c2c2c;
+      }
+    }
+  }
+}
 /*END*/
+@media screen and (max-width: 991px) {
+  /*Конкретный слайдер*/
+  .reviews__slider {
+    position: relative;
+    margin-bottom: 110px;
+  }
+  .reviews__slider .slider__item {
+    width: 674px;
+    height: 407px;
+    padding: 37px 35px;
+  }
+  .reviews__slider .slick-arrow {
+      bottom: -55px;
+  }
+  .reviews__slider {
+    & .reviews {
+      &__client {
+        &-logo {
+          margin-right: 40px;
+          width: 180px;
+          height: 180px;
+          padding: 24px 20px;
+        }
+        &-quote {
+          width: 36px;
+          right: 10px;
+        }
+        &-img {
+          width: 133px;
+          height: 133px;
+        }
+      }
+      &__info {
+        &-client {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 17px;
+        }
+        &-text {
+          width: 383px;
+          font-size: 16px;
+          line-height: 22px;
+          margin-bottom: 15px;
+        }
+        &-name {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 5px;
+        }
+        &-pos {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  /*END*/
+}
