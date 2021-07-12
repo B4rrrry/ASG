@@ -148,7 +148,7 @@
     padding: 37px 35px;
   }
   .reviews__slider .slick-arrow {
-      bottom: -55px;
+    bottom: -55px;
   }
   .reviews__slider {
     & .reviews {
@@ -189,6 +189,77 @@
           font-size: 14px;
           line-height: 20px;
         }
+      }
+    }
+  }
+  /*END*/
+}
+@media screen and (min-width: 1440px) {
+  /*Конкретный слайдер*/
+  .reviews__slider {
+    position: relative;
+    margin-bottom: 110px;
+  }
+  .reviews__slider .slider__item {
+    width: 845px;
+    margin-right: 50px;
+    padding: 50px 60px;
+  }
+  .reviews__slider .slick-arrow {
+    bottom: -55px;
+  }
+  .reviews__slider {
+    // reviews 
+    & .reviews {
+      &__client {
+        &-logo {
+          margin-right: 40px;
+          width: 220px;
+          height: 220px;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        &-quote {
+          width: 45px;
+          right: 10px;
+        }
+        &-img {
+          width: 162px;
+          height: 162px;
+        }
+      }
+      &__info {
+        &-client {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 15px;
+        }
+        &-text {
+          width: 455px;
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 20px;
+        }
+        &-name {
+          font-size: 24px;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+        &-pos {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+    // reviews end 
+    .slick-arrow {
+      width: 65px;
+      height: 65px;
+      background-position:center !important;
+      &.slick-prev {
+        left: calc(50% - 100px);
       }
     }
   }

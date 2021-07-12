@@ -447,6 +447,7 @@
           margin-right: 0;
         }
         &:last-child {
+          margin-top: 60px; 
           margin-bottom: 0;
         }
       }
@@ -567,6 +568,7 @@
     // bg
     &__bg {
       &-top {
+        display: block;
         width: 145px;
         height: 108px;
         position: absolute;
@@ -994,6 +996,13 @@
     // title and sub end
     // list
     &__list {
+      &-desc {
+        &_wrap {
+          &-active {
+            padding-right: 35px;
+          }
+        }
+      }
       &-item {
         width: 700px;
       }
@@ -1002,8 +1011,9 @@
         line-height: 25px;
       }
       &-desc {
-        font-size: 16px;
-        line-height: 22px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 25px;
       }
     }
   }

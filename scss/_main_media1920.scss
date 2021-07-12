@@ -1,0 +1,697 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  .subheader {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  // header
+  .header {
+    // logo
+    &__logo {
+      margin-left: 0;
+      margin-right: auto;
+      &-img {
+        width: 40px;
+        height: 40px;
+      }
+      // name
+      &-name {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        span {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+      // name end
+    }
+    // logo end
+    &__nav {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  // header end
+  // offer
+  .offer {
+    margin-top: 70px;
+    padding-bottom: 70px;
+    // info
+    &__info {
+      // title
+      &-title {
+        width: 550px;
+        font-weight: normal;
+        font-size: 70px;
+        line-height: 84px;
+        margin-bottom: 25px;
+      }
+      // subtitle
+      &-subtitle {
+        width: 477px;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 30px;
+        &::before {
+          width: 152px;
+        }
+      }
+      // text
+      &-text {
+        width: 470px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 40px;
+      }
+      // bottom
+      &-bottom {
+      }
+      // link
+      &-link {
+        padding: 17px 26px;
+        font-size: 16px;
+        line-height: 25px;
+        margin-right: 65px;
+      }
+      // task
+      &-task {
+        font-size: 16px;
+        line-height: 22px;
+      }
+      // img
+      &-img {
+        width: 655px;
+        height: 655px;
+      }
+      // right block
+      &-right_block {
+        margin-left: -190px;
+      }
+      // help
+      &-help {
+        width: 295px;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 30px;
+      }
+      // form
+      &-form {
+        width: 300px;
+        height: 522px;
+        padding: 25px 20px;
+      }
+    }
+    // info end
+    // form list
+    .form__list {
+      &-item {
+        margin-bottom: 20px;
+        &:nth-child(4) {
+          margin-bottom: 30px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+        input {
+          width: 100%;
+          height: 50px;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        label {
+          font-size: 18px;
+          line-height: 23px;
+        }
+      }
+    }
+    // form list end
+  }
+  // offer end
+  // partners
+  .partners {
+    padding: 70px 0;
+  }
+  // partners end
+  // services
+  .services {
+    padding-bottom: 70px;
+    // img
+    &__img {
+      &-top {
+        display: none;
+      }
+      &-bot {
+        width: 160px;
+        height: 189px;
+      }
+    }
+    // title
+    &__title {
+      margin-top: 70px;
+    }
+    // subheader
+    &__subheader {
+      width: 584px;
+      margin-bottom: 57px;
+    }
+    // services_tabs__list
+    &_tabs {
+      // list
+      &__list {
+        margin-bottom: 65px;
+        &-item {
+          margin-right: 55px;
+        }
+      }
+      // btn
+      &__btn {
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+    // tabs end
+    &__list {
+      // item
+      &-item {
+        width: 276px;
+        margin-right: 65px;
+        padding: 25px 20px;
+        border-radius: 20px;
+      }
+      // img
+      &-img {
+        width: 215px;
+        height: 175px;
+        margin-bottom: 6px;
+      }
+      // title
+      &-title {
+        width: 197px;
+        font-size: 28px;
+        line-height: 28px;
+        margin-bottom: 5px;
+      }
+      // desc
+      &-desc {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 18px;
+      }
+      // link
+      &-link {
+        padding: 12px 27px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-right: 36px;
+      }
+      // price
+      &-price {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+    &__link-more {
+      width: 130px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      span {
+        font-size: 12px;
+        line-height: 16px;
+        &::before {
+          top: -5px;
+          right: 0;
+          left: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  // services end
+  // tasks
+  .tasks {
+    &__bg {
+      width: 275px;
+      height: 275px;
+      left: 120px;
+      bottom: -180px;
+    }
+    // title and sunheader
+    &__title {
+      width: 898px;
+      margin-bottom: 10px;
+    }
+    &__subheader {
+      width: 667px;
+      margin-bottom: 65px;
+    }
+    // title and sunheader end
+    // list
+    &__list {
+      margin-bottom: 55px;
+      &-item {
+        margin-right: 24px;
+      }
+      &-title {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+      &-desc {
+        width: 316px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      &-img {
+        width: 65px;
+        height: 65px;
+        margin-right: 25px;
+      }
+    }
+    // list end
+    // strat
+    &__strat {
+      margin-bottom: 35px;
+      &__title {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 20px;
+      }
+      &__number {
+      }
+      &__phone {
+        font-size: 42px;
+        line-height: 57px;
+      }
+    }
+    // strat end
+    // info bottom
+    &__info {
+      &-bottom {
+      }
+      &-link {
+        order: 1;
+        padding: 17px 26px;
+        font-size: 16px;
+        line-height: 25px;
+        margin-right: 35px;
+      }
+      &-task {
+        order: 2;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    // info bottom end
+  }
+  // tasks end
+  // reviews
+  .reviews {
+    padding-bottom: 70px;
+    // title and subheader
+    &__title {
+      width: 744px;
+      margin-bottom: 10px;
+    }
+    &__subheader {
+      width: 717px;
+      margin-bottom: 65px;
+    }
+    // title and subheader end
+    // more
+    &_more {
+      &__title {
+        width: 457px;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 10px;
+      }
+      &__text {
+        width: 598px;
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 33px;
+      }
+      &__list {
+      }
+    }
+    // more end
+  }
+  // reviews end
+  // portfolio
+  .portfolio {
+    & .color-orange {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    // title and subheader
+    &__title {
+      width: 860px;
+      margin-top: 70px;
+      margin-bottom: 10px;
+    }
+    &__subheader {
+      width: 701px;
+      margin-bottom: 65px;
+    }
+    // title and subheader end
+    // portfolio list
+    &__list {
+      margin-bottom: 45px;
+    }
+    // portfolio list end
+    // name
+    &__name {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+    // name end
+    // link
+    &__link {
+      font-size: 24px;
+      line-height: 30px;
+      &-arrow {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    // link end
+    // number
+    &__number {
+      font-size: 64px;
+      line-height: 80px;
+      margin-right: 49px;
+      margin-top: 0;
+    }
+    // number end
+    // img
+    &__img {
+      width: 519px;
+      height: 316px;
+      margin-right: 141px;
+      margin-top: 0;
+    }
+    // img
+    // info
+    &__info {
+      .portfolio {
+        &__name {
+          font-size: 36px;
+          line-height: 45px;
+          margin-bottom: 10px;
+        }
+        &__desc {
+          font-size: 18px;
+          line-height: 25px;
+          margin-bottom: 15px;
+          &-excerpt {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    // info
+    &__subject,
+    &__region,
+    &__advancement,
+    &__increase {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+    // btn
+    &__btn {
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    // btn end
+    // portfolio cm
+    &_cm {
+      // bg
+      &__bg {
+        width: 430px;
+        height: 354px;
+      }
+      // item
+      &__item {
+        margin-bottom: 50px;
+        &:nth-child(3) {
+          margin-left: 135px;
+        }
+      }
+      // list
+      &__list {
+      }
+      // title
+      &__title {
+        width: 344px;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 10px;
+      }
+      // text
+      &__text {
+        width: 414px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+      // list end
+      // img
+      &__img {
+        width: 45px;
+        &-wrap {
+          width: 75px;
+          margin-bottom: 15px;
+        }
+      }
+      // name
+      &__name {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+      // desc
+      &__desc {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 15px;
+      }
+      // btn
+      &__btn {
+        width: 135px;
+        height: 45px;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    // portfolio cm end
+    // portfolio item cm
+    &__item-cm {
+      .portfolio__number {
+        margin-right: 100px;
+      }
+    }
+    // portfolio item cm end
+    // work
+    &__work {
+      &-active {
+        &:last-child {
+          max-height: 594px;
+        }
+      }
+    }
+    // work
+  }
+  // portfolio end
+  // achievements
+  .achievements {
+    padding-bottom: 70px;
+    // title and subheader
+    &__title {
+      width: 440px;
+      margin-bottom: 10px;
+      margin-top: 65px;
+    }
+    &__subheader {
+      width: 737px;
+      margin-bottom: 50px;
+    }
+    // title and subheader end
+    // list
+    &__list {
+      &-number {
+        font-size: 72px;
+        line-height: 90px;
+        margin-bottom: 5px;
+      }
+      &-desc {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      &-item {
+        padding-right: 45px;
+        margin-right: 45px;
+        &:nth-child(3) {
+          .achievements__list-desc {
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    // list end
+  }
+  // achievements end
+  // niches
+  .niches {
+    padding-bottom: 70px;
+    // bg
+    &__bg {
+      &-top {
+        width: 250px;
+        height: 187px;
+        top: -85px;
+      }
+      &-bot {
+        width: 302px;
+        height: 302px;
+        bottom: -220px;
+      }
+    }
+    // bg end
+    // title and sub
+    &__title {
+      width: 828px;
+      margin-top: 70px;
+      margin-bottom: 10px;
+    }
+    &__subheader {
+      width: 715px;
+      margin-bottom: 65px;
+    }
+    // title and sub end
+    // list
+    &__list {
+      margin-right: 126px;
+      &-item {
+        margin-right: 31px;
+      }
+      &-img {
+        &_bg {
+        }
+      }
+    }
+    // list end
+    // img
+    &__img {
+      &-active {
+        margin-bottom: 65px;
+      }
+    }
+    // img end
+  }
+  // niches end
+  // stages
+  .stages {
+    padding-bottom: 70px;
+    // title and subtitle
+    &__title {
+      width: 425px;
+      margin-bottom: 10px;
+    }
+    &__subheader {
+      width: 522px;
+      margin-bottom: 65px;
+    }
+    // title and subtitle
+    // list
+    &__list {
+      &-item {
+        margin-right: 80px;
+      }
+      &-scale {
+        margin-bottom: 30px;
+      }
+      &-name {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+      &-desc {
+        width: 260px;
+        font-size: 18px;
+        line-height: 25px;
+      }
+    }
+    // list end
+  }
+  // stages end
+  // indexing
+  .indexing {
+    // title and subtitle
+    &__title {
+      width: 790px;
+      margin-top: 70px;
+      margin-bottom: 10px;
+    }
+    &__subheader {
+      width: 824px;
+      margin-bottom: 65px;
+    }
+    // title and subtitle end
+    // wrapper
+    &__wrapper {
+      width: 950px;
+      height: 570px;
+    }
+    // wrapper end
+    // table
+    &__table {
+      width: 905px;
+      height: 100%;
+      padding-left: 20px;
+      margin-left: -40px;
+      &-scroll {
+        top:-15px;
+        &::after {
+          display: none;
+        }
+      }
+      &-item {
+        width: 870px;
+      }
+      &-desc {
+        width: 209px;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 15px;
+      }
+      &-name {
+        &-second .indexing__table-desc {
+          width: 184px;
+        }
+      }
+    }
+    // table end
+  }
+  // indexing end
+}
