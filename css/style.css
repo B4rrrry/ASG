@@ -3389,6 +3389,14 @@ a:hover {
     font-size: 48px;
     line-height: 60px;
   }
+  .sticky__nav {
+    bottom: 120px;
+  }
+  .sticky__nav-item {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+  }
   .header__logo {
     margin-left: 0;
     margin-right: auto;
@@ -3455,7 +3463,7 @@ a:hover {
     margin-left: -190px;
   }
   .offer__info-help {
-    width: 295px;
+    width: 296px;
     font-size: 20px;
     line-height: 25px;
     margin-bottom: 30px;
@@ -3704,8 +3712,8 @@ a:hover {
   }
   .portfolio__subject, .portfolio__region, .portfolio__advancement, .portfolio__increase {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 25px;
     margin-bottom: 5px;
   }
   .portfolio__btn {
@@ -3761,6 +3769,9 @@ a:hover {
   }
   .portfolio__item-cm .portfolio__number {
     margin-right: 100px;
+  }
+  .portfolio__work-active {
+    max-height: 406px;
   }
   .portfolio__work-active:last-child {
     max-height: 594px;
@@ -3851,6 +3862,14 @@ a:hover {
     font-size: 18px;
     line-height: 25px;
   }
+  .indexing {
+    padding-bottom: 70px;
+  }
+  .indexing__bg {
+    width: 244px;
+    height: 225px;
+    left: 15px;
+  }
   .indexing__title {
     width: 790px;
     margin-top: 70px;
@@ -3866,7 +3885,7 @@ a:hover {
   }
   .indexing__table {
     width: 905px;
-    height: 100%;
+    height: 425px;
     padding-left: 20px;
     margin-left: -40px;
   }
@@ -3878,6 +3897,7 @@ a:hover {
   }
   .indexing__table-item {
     width: 870px;
+    padding: 13px 0 13px 40px;
   }
   .indexing__table-desc {
     width: 209px;
@@ -3887,6 +3907,139 @@ a:hover {
   }
   .indexing__table-name-second .indexing__table-desc {
     width: 184px;
+  }
+  .articles {
+    padding-bottom: 70px;
+  }
+  .articles__title {
+    width: 678px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+  .articles__subheader {
+    width: 705px;
+    margin-bottom: 65px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .articles__wrapper {
+    margin: 0 auto 60px;
+  }
+  .articles__item {
+    width: 400px;
+  }
+  .articles__item-img {
+    object-fit: cover;
+  }
+  .articles__item-desc {
+    width: 338px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .articles__item-desc-wrap {
+    padding: 25px 37px 25px 25px;
+  }
+  .articles__item-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .articles__item-link {
+    padding: 15px 26px;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 16px;
+  }
+  .articles__invite-text {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  .articles__invite_link {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .questions {
+    padding-bottom: 70px;
+  }
+  .questions__bg {
+    top: -120px;
+  }
+  .questions__title {
+    width: 761px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+  .questions__subheader {
+    width: 783px;
+    margin-bottom: 65px;
+  }
+  .questions__list-item {
+    width: 1070px;
+    margin-bottom: 37px;
+  }
+  .questions__list-top {
+    padding: 18px 15px 17px 25px;
+  }
+  .questions__list-desc {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .questions__list-desc-wrap {
+    padding: 30px 45px 35px 41px;
+  }
+  .footer__nav {
+    justify-content: center;
+  }
+  .footer__nav-cont {
+    margin-right: 102px;
+  }
+  .footer__nav-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .footer__nav__list-link {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__info {
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto 35px;
+  }
+  .footer__about {
+    margin-right: 65px;
+    padding-bottom: 35px;
+  }
+  .footer__about-text {
+    width: 395px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__contacts {
+    padding-left: 66px;
+    padding-right: 66px;
+    margin-right: 65px;
+  }
+  .footer__contacts-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .footer__contacts__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__map-title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .footer__map-map {
+    width: 315px;
+    height: 170px;
   }
 }
 /*# sourceMappingURL=style.css.map */
