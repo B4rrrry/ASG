@@ -4,6 +4,9 @@ $arsenal: "Arsenal", "sans-serif";
 .color-orange { 
   color: #eb6a48;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: $openSans;
   scroll-behavior: smooth;
@@ -351,6 +354,9 @@ a:hover {
       margin-bottom: 45px;
       display: flex;
       justify-content: center;
+      &-cont {
+        display: none;
+      }
       &-item {
         margin-right: 30px;
         &:last-child {
@@ -383,6 +389,7 @@ a:hover {
   }
   // services list
   &__list {
+
     display: flex;
     margin-left: 30px;
     &:not(:first-child) {

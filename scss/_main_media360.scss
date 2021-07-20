@@ -491,8 +491,9 @@
     }
     // title and subtitle
     &__title {
-      width: 287px;
+      width: 299px;
       margin: 50px auto 10px;
+      text-align: center;
     }
     &__subheader {
       width: 297px;
@@ -585,7 +586,7 @@
     &_strat {
       margin-bottom: 0;
       &__title {
-        width: 275px;
+        width: 255px;
         font-size: 24px;
         line-height: 30px;
         text-align: center;
@@ -614,6 +615,7 @@
     &__title {
       width: 250px;
       margin: 50px auto 10px;
+      text-align: center;
     }
     &__subheader {
       width: 281px;

@@ -237,7 +237,7 @@
         font-size: 16px;
         line-height: 24px;
         text-align: center;
-        margin: 0 auto 45px;
+        margin: 0 auto 30px;
         span {
           font-weight: 600;
         }
@@ -299,6 +299,7 @@
             margin-bottom: 25px;
             & input[type="submit"] {
               width: 220px;
+              height: 55px;
               font-size: 14px;
               line-height: 19px;
             }
@@ -309,6 +310,7 @@
             }
             & input {
               width: 280px;
+              height: 55px;
             }
             &:nth-child(2n + 2) {
               margin-right: 0;
@@ -446,6 +448,8 @@
       flex-wrap: nowrap;
       margin: 0 auto;
       justify-content: flex-start;
+      padding: 24px 20px;
+      margin-left: -15px;
       &-item {
         &:nth-child(1),
         &:nth-child(2) {
@@ -485,14 +489,15 @@
   // services end
   // tasks
   .tasks {
-    padding-bottom: 55px;
+    padding-bottom: 50px;
     &__bg {
       display: none;
     }
     // title and subtitle
     &__title {
-      width: 287px;
+      width: 299px;
       margin: 50px auto 10px;
+      text-align: center;
     }
     &__subheader {
       width: 297px;
@@ -585,13 +590,14 @@
     &_strat {
       margin-bottom: 0;
       &__title {
-        width: 275px;
+        width: 255px;
         font-size: 24px;
         line-height: 30px;
         text-align: center;
         margin: 0 auto 30px;
       }
       &__number {
+        margin-bottom: 20px;
       }
       &__img {
         width: 40px;
@@ -614,9 +620,10 @@
     &__title {
       width: 250px;
       margin: 50px auto 10px;
+      text-align: center;
     }
     &__subheader {
-      width: 281px;
+      width: 269px;
       margin: 0 auto 35px;
       text-align: center;
     }
@@ -1445,6 +1452,6 @@
       line-height: 20px;
       width: 339px;
       text-align: center;
-    } 
+    }
   }
 }

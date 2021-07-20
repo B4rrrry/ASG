@@ -6,6 +6,24 @@ changeServicesList();
 updateQuestions();
 headerBurgerInit();
 footerMobileInit();
+stickyNav();
+function stickyNav () {
+    const btnUp = document.querySelector('.up__btn');
+    btnUp.addEventListener('click', function () {
+        window.scrollTo(0,0);
+    })
+    window.addEventListener('scroll', function () {
+        checkBtn ();
+    });
+    function checkBtn () {
+        if (window.pageYOffset >= 200) {
+            btnUp.style.display = 'flex';
+        }
+        else {
+            btnUp.style.display = 'none';
+        }
+    };
+}
 function footerMobileInit () {
     const btnsMenu = document.querySelectorAll('.footer__nav-close'),
           navs = document.querySelectorAll('.footer__nav-wrap');
