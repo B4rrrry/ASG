@@ -236,3 +236,526 @@
   }
   // header sub nav end
 }
+@media screen and (min-width:1440px) {
+    // header
+    .header {
+      // logo
+      &__logo {
+        margin-left: 0;
+        margin-right: auto;
+        &-img {
+          width: 40px;
+          height: 40px;
+        }
+        // name
+        &-name {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 23px;
+          span {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+        // name end
+      }
+      // logo end
+      &__nav {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    // header end
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+ // header
+ .header {
+  padding-top: 19px;
+  padding-bottom: 16px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  &__nav {
+    display: none;
+  }
+  &__content {
+  }
+  &__logo {
+    margin-top: 0;
+    margin-right: 64px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  // burger
+  &__burger {
+    &-active {
+      filter: none;
+    }
+    // bg burger
+    &_bg {
+      background: #13131387;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      left: 0;
+      opacity: 0;
+      transition: all 0.4s ease-in;
+      &-active {
+        position: fixed;
+        opacity: 1;
+      }
+    }
+    // wrapper
+    &-wrapper {
+      width: 365px;
+      display: block;
+      height: 100%;
+      background-color: white;
+      position: fixed;
+      right: -100%;
+      top: 62px;
+      padding: 50px 0 0 35px;
+      z-index: -1;
+      &-active {
+        transition: all 0.5s ease-in;
+        right: 0;
+      }
+      // find
+      & .header__burger-find {
+      }
+      // find title
+      & .header-sub__info-title {
+        width: 296px;
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 15px;
+      }
+      // find text
+      & .header-sub__info-text {
+        width: 295px;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 25px;
+        color: #000000;
+      }
+      // btn chat
+      & .header-sub__info-btn {
+        padding: 16px 23px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    // menu
+    &-menu {
+      font-family: $arsenal;
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 35px;
+      // item
+      &_item {
+        margin-bottom: 20px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      // link
+      &_link {
+        color: #000000;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+    // pjone
+    &-phone {
+      width: 229px;
+      display: block;
+      &_img {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+      }
+    }
+    // link
+    &-link {
+      font-weight: 600;
+      display: flex;
+      font-size: 20px;
+      line-height: 27px;
+      color: #131313;
+      &:hover {
+        color: #131313;
+      }
+    }
+    // link
+    // click
+    &-click {
+      font-size: 12px;
+      line-height: 16px;
+      text-align: right;
+    }
+    // btn
+    &-btn {
+      display: block;
+      width: 50px;
+      height: 10px;
+      position: relative;
+      span {
+        width: 100%;
+        height: 2px;
+        background-color: #131313;
+        position: absolute;
+        top: 0;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: #131313;
+          top: 10px;
+        }
+      }
+    }
+  }
+  // burger end
+}
+// end header
+}
+@media screen  and (min-width: 411px) and (max-width: 414px) {
+   // header
+   .header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    &__nav {
+      display: none;
+    }
+    &__content {
+    }
+    &__logo {
+      margin-top: 0;
+      margin-right: auto;
+      &-name {
+        display: none;
+      }
+      &-img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    // burger
+    &__burger {
+      &-active {
+        filter: none;
+      }
+      // bg burger
+      &_bg {
+        background: #13131387;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        left: 0;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        &-active {
+          position: fixed;
+          opacity: 1;
+        }
+      }
+      // wrapper
+      &-wrapper {
+        width: 100%;
+        display: block;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        right: -100%;
+        top: 53px;
+        padding: 20px 0 0 22px;
+        z-index: -1;
+        &-active {
+          transition: all 0.5s ease-in;
+          right: 0;
+        }
+        // find
+        & .header__burger-find {
+        }
+        // find title
+        & .header-sub__info-title {
+          width: 212px;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 5px;
+        }
+        // find text
+        & .header-sub__info-text {
+          width: 295px;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 15px;
+          color: #000000;
+        }
+        // btn chat
+        & .header-sub__info-btn {
+          padding: 13px 19px;
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+      // menu
+      &-menu {
+        font-family: $arsenal;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        // item
+        &_item {
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        // link
+        &_link {
+          color: #000000;
+
+          &:hover {
+            color: #000000;
+          }
+        }
+      }
+      // pjone
+      &-phone {
+        width: 229px;
+        display: block;
+        &_img {
+          width: 23px;
+          height: 23px;
+          margin-right: 7px;
+        }
+      }
+      // link
+      &-link {
+        font-weight: 600;
+        display: flex;
+        font-size: 16px;
+        line-height: 22px;
+        color: #131313;
+        &:hover {
+          color: #131313;
+        }
+      }
+      // link
+      // click
+      &-click {
+        width: 159px;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: unset;
+        margin-left: 30px;
+      }
+      // btn
+      &-btn {
+        display: block;
+        width: 30px;
+        height: 8px;
+        position: relative;
+        span {
+          width: 100%;
+          height: 2px;
+          background-color: #131313;
+          position: absolute;
+          top: 0;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #131313;
+            top: 10px;
+          }
+        }
+      }
+    }
+    // burger end
+  }
+  // end header
+ }
+
+ @media screen  and (max-width: 360px)  {
+  // header
+  .header {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    &__nav {
+      display: none;
+    }
+    &__content {
+    }
+    &__logo {
+      margin-top: 0;
+      margin-right: auto;
+      &-name {
+        display: none;
+      }
+      &-img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+    }
+    // burger
+    &__burger {
+      &-active {
+        filter: none;
+      }
+      // bg burger
+      &_bg {
+        background: #13131387;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        left: 0;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        &-active {
+          position: fixed;
+          opacity: 1;
+        }
+      }
+      // wrapper
+      &-wrapper {
+        width: 100%;
+        display: block;
+        height: 100%;
+        background-color: white;
+        position: fixed;
+        right: -100%;
+        top: 53px;
+        padding: 20px 0 0 22px;
+        z-index: -1;
+        &-active {
+          transition: all 0.5s ease-in;
+          right: 0;
+        }
+        // find
+        & .header__burger-find {
+        }
+        // find title
+        & .header-sub__info-title {
+          width: 212px;
+          font-size: 20px;
+          line-height: 25px;
+          margin-bottom: 5px;
+        }
+        // find text
+        & .header-sub__info-text {
+          width: 295px;
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 15px;
+          color: #000000;
+        }
+        // btn chat
+        & .header-sub__info-btn {
+          padding: 13px 19px;
+          font-size: 14px;
+          line-height: 19px;
+        }
+      }
+      // menu
+      &-menu {
+        font-family: $arsenal;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        // item
+        &_item {
+          margin-bottom: 15px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        // link
+        &_link {
+          color: #000000;
+   
+          &:hover {
+            color: #000000;
+          }
+        }
+      }
+      // pjone
+      &-phone {
+        width: 229px;
+        display: block;
+        &_img {
+          width: 23px;
+          height: 23px;
+          margin-right: 7px;
+        }
+      }
+      // link
+      &-link {
+        font-weight: 600;
+        display: flex;
+        font-size: 16px;
+        line-height: 22px;
+        color: #131313;
+        &:hover {
+          color: #131313;
+        }
+      }
+      // link
+      // click
+      &-click {
+        width: 159px;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: unset;
+        margin-left: 30px;
+      }
+      // btn
+      &-btn {
+        display: block;
+        width: 30px;
+        height: 8px;
+        position: relative;
+        span {
+          width: 100%;
+          height: 2px;
+          background-color: #131313;
+          position: absolute;
+          top: 0;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #131313;
+            top: 10px;
+          }
+        }
+      }
+    }
+    // burger end
+  }
+  // end header
+ }

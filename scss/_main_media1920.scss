@@ -22,35 +22,7 @@
       margin-bottom: 25px;
     }
   }
-  // header
-  .header {
-    // logo
-    &__logo {
-      margin-left: 0;
-      margin-right: auto;
-      &-img {
-        width: 40px;
-        height: 40px;
-      }
-      // name
-      &-name {
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 23px;
-        span {
-          font-size: 12px;
-          line-height: 16px;
-        }
-      }
-      // name end
-    }
-    // logo end
-    &__nav {
-      font-size: 16px;
-      line-height: 22px;
-    }
-  }
-  // header end
+
   // offer
   .offer {
     margin-top: 70px;
@@ -829,78 +801,5 @@
     // list end
   }
   // questions
-  // footer
-  .footer {
-    // main
-    &__main {
-    }
-    // main end
-    // nav
-    &__nav {
-      justify-content: center;
-      &-cont {
-        margin-right: 102px;
-      }
-      &-title {
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 20px;
-      }
-      &__list {
-        &-link {
-          font-size: 18px;
-          line-height: 25px;
-        }
-      }
-    }
-    // nav end
-    // info
-    &__info {
-      justify-content: center;
-      width: fit-content;
-      margin: 0 auto 35px;
-    }
-    // info end
-    // about
-    &__about {
-      margin-right: 65px;
-      padding-bottom: 35px;
-      &-text {
-        width: 395px;
-        font-size: 18px;
-        line-height: 25px;
-      }
-    }
-    // about end
-    // contacts
-    &__contacts {
-      padding-left: 66px;
-      padding-right: 66px;
-      margin-right: 65px;
-      &-title {
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 15px;
-      }
-      &__list {
-        font-size: 18px;
-        line-height: 25px;
-      }
-    }
-    // contacts end
-    // map
-    &__map {
-      &-title {
-        font-size: 24px;
-        line-height: 30px;
-        margin-bottom: 15px;
-      }
-      &-map {
-        width: 315px;
-        height: 170px;
-      }
-    }
-    // map end
-  }
-  // footer end
+
 }

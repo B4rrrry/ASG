@@ -1,12 +1,12 @@
-portfolioInit();
-headerNavInit();
-hoversInit();
-sendHelp();
-changeServicesList();
-updateQuestions();
 headerBurgerInit();
 footerMobileInit();
 stickyNav();
+headerNavInit();
+hoversInit();
+sendHelp();
+portfolioInit();
+changeServicesList();
+updateQuestions();
 function stickyNav () {
     const btnUp = document.querySelector('.up__btn');
     btnUp.addEventListener('click', function () {
