@@ -7,6 +7,7 @@ sendHelp();
 portfolioInit();
 changeServicesList();
 updateQuestions();
+
 function stickyNav () {
     const btnUp = document.querySelector('.up__btn');
     btnUp.addEventListener('click', function () {
@@ -105,10 +106,10 @@ function sendHelp () {
     })
     function sendHelpMail(e) {
         e.preventDefault();
-        successWrap.style.display = 'block';
+        successWrap.classList.toggle('offer__form__success-active')
         offerBtn.style.display = 'none';
         successBtn.addEventListener('click', () => {
-            successWrap.style.display = 'none';
+            successWrap.classList.toggle('offer__form__success-active')
             offerBtn.style.display = 'block';
         })
     }
