@@ -3118,10 +3118,11 @@ a:hover {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+  margin-right: 20px;
 }
 
-.articles__item-info-date {
-  margin-right: 20px;
+.articles__item-info-text:last-child {
+  margin-right: 0;
 }
 
 .articles__item-info-img {

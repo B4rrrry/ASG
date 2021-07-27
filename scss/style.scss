@@ -1459,9 +1459,10 @@ a:hover {
         font-weight: 600;
         font-size: 14px;
         line-height: 19px;
-      }
-      &-date {
         margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
       }
       &-img {
         width: 18px;
