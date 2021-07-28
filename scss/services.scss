@@ -393,6 +393,9 @@
         &:nth-child(4n + 4) {
           margin-right: 0;
         }
+        &:nth-child(4) {
+          margin-right: 75px;
+        }
         &:nth-child(2n + 2) {
           margin-right: 0;
         }
@@ -547,6 +550,9 @@
         &:nth-child(1),
         &:nth-child(2) {
           margin-bottom: 35px;
+        }
+        &:nth-child(4) {
+          margin-right: 0;
         }
         &:nth-child(4n + 4) {
           margin-right: 0;
@@ -707,6 +713,9 @@
           &:nth-child(1),
           &:nth-child(2) {
             margin-bottom: 35px;
+          }
+          &:nth-child(4) {
+            margin-right: 0;
           }
           &:nth-child(4n + 4) {
             margin-right: 0;

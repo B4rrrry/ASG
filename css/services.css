@@ -346,6 +346,9 @@
   .services__list-item:nth-child(4n + 4) {
     margin-right: 0;
   }
+  .services__list-item:nth-child(4) {
+    margin-right: 75px;
+  }
   .services__list-item:nth-child(2n + 2) {
     margin-right: 0;
   }
@@ -474,6 +477,9 @@
   }
   .services__list-item:nth-child(1), .services__list-item:nth-child(2) {
     margin-bottom: 35px;
+  }
+  .services__list-item:nth-child(4) {
+    margin-right: 0;
   }
   .services__list-item:nth-child(4n + 4) {
     margin-right: 0;
@@ -608,6 +614,9 @@
   }
   .services__list-item:nth-child(1), .services__list-item:nth-child(2) {
     margin-bottom: 35px;
+  }
+  .services__list-item:nth-child(4) {
+    margin-right: 0;
   }
   .services__list-item:nth-child(4n + 4) {
     margin-right: 0;
