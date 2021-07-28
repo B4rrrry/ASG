@@ -7,7 +7,22 @@ sendHelp();
 portfolioInit();
 changeServicesList();
 updateQuestions();
-
+nichesInit();
+function nichesInit() {
+    const nichesItems = document.querySelectorAll('.niches__list-img_bg'),
+          nichesActive = document.querySelectorAll('.niches__img');
+    nichesItems.forEach( (item,i) => {
+        item.addEventListener('mouseover', function () {
+            updateImg(i);
+        })
+    } )
+    function updateImg(i) {
+        for(let i = 0; i < nichesActive.length; i++) {
+            nichesActive[i].classList.remove('niches__img-active');
+        }
+        nichesActive[i].classList.add('niches__img-active');
+    }
+}
 function stickyNav () {
     const btnUp = document.querySelector('.up__btn');
     btnUp.addEventListener('click', function () {
