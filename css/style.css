@@ -1706,9 +1706,9 @@ a:hover {
 .reviews .reviews__slider .slick-arrow.slick-next {
   background-image: url("../img/slider/next.svg");
   background-position: 12px 50%;
-  left: 50%;
-  right: -webkit-calc(50% - 15px);
-  right: calc(50% - 15px);
+  left: 55%;
+  right: -webkit-calc(50% - 0px);
+  right: calc(50% - 0px);
 }
 
 .reviews .reviews__slider .slick-arrow .slick-disabled {
@@ -2118,8 +2118,8 @@ a:hover {
     background-position: center !important;
   }
   .reviews .reviews__slider .slick-arrow.slick-prev {
-    left: -webkit-calc(50% - 100px);
-    left: calc(50% - 100px);
+    left: -webkit-calc(50% - 80px);
+    left: calc(50% - 80px);
   }
 }
 
