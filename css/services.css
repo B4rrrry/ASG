@@ -347,7 +347,7 @@
     margin-right: 0;
   }
   .services__list-item:nth-child(4) {
-    margin-right: 75px;
+    margin-right: 0px !important;
   }
   .services__list-item:nth-child(2n + 2) {
     margin-right: 0;
@@ -479,7 +479,7 @@
     margin-bottom: 35px;
   }
   .services__list-item:nth-child(4) {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .services__list-item:nth-child(4n + 4) {
     margin-right: 0;
@@ -616,7 +616,7 @@
     margin-bottom: 35px;
   }
   .services__list-item:nth-child(4) {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
   .services__list-item:nth-child(4n + 4) {
     margin-right: 0;
